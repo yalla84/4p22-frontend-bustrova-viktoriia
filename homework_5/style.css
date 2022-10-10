@@ -5,7 +5,7 @@
 .body {
     margin: 0;
     background-color: bisque;
-    font-family: sans-serif;
+    font-family: sans-serif;   
 }
 
 .header {
@@ -18,8 +18,7 @@
     padding-top: 5px; 
     font-size: xx-large;
     color: white;
-    z-index: 9999;
-
+    z-index: 9999;   
 }
 
 .container {
@@ -43,6 +42,7 @@
 .sidebar__text {
     list-style-type: none;
 }
+
 .sidebar__link {
     text-decoration: none;
 }
@@ -54,15 +54,9 @@
     left: 300px;
 }
 
-.box {
-    overflow: auto;
-    margin-top: 20px;
-    height: 300px;  
-}
-
-.box__letter {
+.content__letter {
     position: sticky;
-    top: 0;
+    top: 50px;
     background-color: blue;
     width: 80%;
     height: 30px;
@@ -72,12 +66,12 @@
     margin: 0;
 }
 
-.box__list {
+.content__list {
     padding-left: 10px;
     margin-top: 10px;
 }
 
-.box__text {
+.content__text {
     list-style-type: none;
 }
 
