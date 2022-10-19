@@ -238,7 +238,6 @@
         width: calc(28 / 768 * 100vw);
         height: calc(28 / 768 * 100vw);
         top: calc(-6 / 768 * 100vw);
-        top: -6;
         border-radius: calc(7 / 768 * 100vw);
     }
 
