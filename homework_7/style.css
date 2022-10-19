@@ -7,54 +7,58 @@
     background: #1B2473;
 }
 
+.registration {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
 .registration__form {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(600 / 1440 * 100vw);
-    margin-left: calc(412 / 1440 * 100vw);
-    margin-top: calc(82 / 1440 * 100vw);
-    height: calc(412 / 1440 * 100vw);
+    justify-content: center;
+    width: 600px;
+    height: 412px;
+    top: 82px;
+    padding-top: 26px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 26px;
     background: #FFFFFF;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-    border-radius: calc(20 / 1440 * 100vw);
+    border-radius: 20px;
 }
 
 .registration__heading {
-    position: absolute;
-    margin-left: calc(242 / 1440 * 100vw);
-    margin-top: calc(22 / 1440 * 100vw);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 17px;
     color: #787878;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(50 / 1440 * 100vw);
-    line-height: calc(50 / 1400 * 100vw);
+    font-size: 50px;
 }
 
 .registration-email__label {
-    position: absolute;
-    margin-top: calc(93 / 1440 * 100vw);
-    margin-left: calc(53 / 1440 * 100vw);
+    display: block;
+    margin-bottom: 3px;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(16 / 1440 * 100vw);
-    line-height: calc(16 / 1440 * 100vw);
+    font-size: 16px;
     color: #787878;
 }
 
 .registration-email__input {
-    position: absolute;
-    margin-top: calc(112 / 1440 * 100vw);
-    margin-left: calc(45 / 1440 * 100vw);
-    height: calc(49 / 1440 * 100vw);
-    width: calc(509 / 1440 * 100vw);
+    height: 49px;
     border: 2px solid #787878;
-    border-radius: calc(10 / 1440 * 100vw);
-    padding-top: calc(7 / 1440 * 100vw);
-    padding-left: calc(15 / 1440 * 100vw);
-    padding-bottom: calc(6 / 1440 * 100vw);
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 15px;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(28 / 1440 * 100vw);
+    font-size: 28px;
     color: #787878;
     outline: none;
 }
@@ -63,32 +67,31 @@
     color: #CCCCCC;
 }
 
+.registration__password {
+    margin-top: 13px;
+}
+
 .registration-password__label {
-    position: absolute;
-    margin-top: calc(175 / 1440 * 100vw);
-    margin-left: calc(53 / 1440 * 100vw);
+    display: block;
+    margin-bottom: 3px;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(24 / 1440 * 100vw);
+    font-size: 24px;
     color: #787878;
     opacity: 0;
 }
 
 .registration-password__input {
-    position: absolute;
-    margin-top: calc(193 / 1440 * 100vw);
-    margin-left: calc(45 / 1440 * 100vw);
-    height: calc(49 / 1440 * 100vw);
-    width: calc(509 / 1440 * 100vw);
+    height: 49px;
+    width: 100%;
     border: 2px solid #787878;
-    border-radius: calc(10 / 1440 * 100vw);
-    padding-top: calc(7 / 1440 * 100vw);
-    padding-left: calc(15 / 1440 * 100vw);
-    padding-bottom: calc(6 / 1440 * 100vw);
+    border-radius: 10px;
+    padding-left: 15px;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(28 / 1440 * 100vw);
+    font-size: 28px;
     color: #787878;
+    outline: none;
 }
 
 .registration-password__input::placeholder {
@@ -96,9 +99,10 @@
 }
 
 .registration__checkbox {
-    position: absolute;
-    margin-top: calc(258 / 1440 * 100vw);
-    margin-left: calc(45 / 1440 * 100vw);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 52px;
+    padding-bottom: 4px;
 }
 
 .registration-checkbox__input {
@@ -106,15 +110,13 @@
     opacity: 0;
     width: 100%;
     height: 100%;
-    margin: 0;
 }
 
 .registration-checkbox__label {
-    padding-left: calc(33 / 1440 * 100vw);
+    padding-left: 34px;
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
-    font-size: calc(14 / 1440 * 100vw);
-    line-height: calc(16 / 1440 * 100vw);
+    font-size: 14px;
     color: #787878;
 }
 
@@ -123,21 +125,21 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: calc(20 / 1440 * 100vw);
-    height: calc(20 / 1440 * 100vw);
+    width: 20px;
+    height: 20px;
     border: 2px solid #787878;
-    border-radius: calc(7 / 1440 * 100vw);
+    border-radius: 7px;
 }
 
 .registration-checkbox__label::after {
     content: '';
-    background: url(img/check.png);
-    width: calc(25 / 1440 * 100vw);
-    height: calc(25 / 1440 * 100vw);
-    background-size: 100%;
     position: absolute;
-    left: 1px;
-    top: calc(-10 / 1440 * 100vw);
+    background: url(img/check.png);
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    left: 0;
+    bottom: 0;
     opacity: 0;
     transition: .2 opacity;
 }
@@ -147,139 +149,93 @@
 }
 
 .registration__submit {
-    position: absolute;
-    box-sizing: border-box;
-    margin-top: calc(334 / 1440 * 100vw);
-    margin-left: calc(210 / 1440 * 100vw);
-    height: calc(52 / 1440 * 100vw);
-    width: calc(180 / 1440 * 100vw);
+    margin: auto;   
 }
 
 .registration-submit__input {
-    padding-top: calc(16 / 1440 * 100vw);
-    padding-left: calc(54 / 1440 * 100vw);
-    padding-bottom: calc(16 / 1440 * 100vw);
-    padding-right: calc(54 / 1440 * 100vw);
+    width: 180px;
+    height: 52px;
+    padding: 0;
+    border: 0;
     background: #1A226B;
-    border-radius: calc(10 / 1440 * 100vw);
+    border-radius: 10px;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(24 / 1440 * 100vw);
-    line-height: calc(16 / 1440 * 100vw);
+    font-size: 24px;
+    line-height: 16px;
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .registration__form {
         width: calc(728 / 768 * 100vw);
-        margin: calc(20 / 768 * 100vw);
         height: calc(697 / 768 * 100vw);
+        top: calc(20 / 768 * 100vw);
+        padding-top: calc(38 / 768 * 100vw);
+        padding-bottom: calc(242 / 768 * 100vw);
         border-radius: calc(20 / 768 * 100vw);
+        padding-left: calc(45 / 768 * 100vw);
+        padding-right: calc(45 / 768 * 100vw);
     }
 
     .registration__heading {
-        margin-left: calc(288 / 768 * 100vw);
-        margin-top: calc(38 / 768 * 100vw);
         font-size: calc(60 / 768 * 100vw);
-        line-height: calc(50 / 768 * 100vw);
+        margin: 0;
+        padding-bottom: calc(17 / 768 * 100vw);
     }
 
     .registration-email__label {
-        margin-top: calc(101 / 768 * 100vw);
-        margin-left: calc(53 / 768 * 100vw);
         font-size: calc(24 / 768 * 100vw);
-        line-height: calc(16 / 768 * 100vw);
-        color: #787878;
+     
     }
 
     .registration-email__input {
-        margin-top: calc(125 / 768 * 100vw);
-        width: calc(638 / 768 * 100vw);
-        margin-left: calc(45 / 768 * 100vw);
-        height: calc(49 / 768 * 100vw);
-        padding-top: calc(7 / 768 * 100vw);
-        padding-left: calc(15 / 768 * 100vw);
-        padding-bottom: calc(6 / 768 * 100vw);
-        font-size: calc(28 / 768 * 100vw);
+        height: calc(49 /768 * 100vw);
         border-radius: calc(10 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
     }
-
+    
     .registration-password__label {
-        margin-top: calc(187 / 768 * 100vw);
-        margin-left: calc(53 / 768 * 100vw);
+        margin-bottom: calc(8 / 768 * 100vw);
         font-size: calc(24 / 768 * 100vw);
-        line-height: calc(16 / 768 * 100vw);
         opacity: 1;
     }
 
     .registration-password__input {
-        margin-top: calc(211 / 768 * 100vw);
-        width: calc(638 / 768 * 100vw);
-        margin-left: calc(45 / 768 * 100vw);
-        height: calc(49 / 768 * 100vw);
-        padding-top: calc(7 / 768 * 100vw);
-        padding-left: calc(15 / 768 * 100vw);
-        padding-bottom: calc(6 / 768 * 100vw);
-        font-size: calc(28 / 768 * 100vw);
         border-radius: calc(10 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        height: calc(49 /768 * 100vw)
     }
 
     .registration__checkbox {
-        margin-top: calc(287 / 768 * 100vw);
-        margin-left: calc(45 / 768 * 100vw);  
+        margin-top: calc(35 / 768 * 100vw);
+        margin-bottom: calc(34 / 768 * 100vw);
+        padding-bottom: calc(4 / 768 * 100vw);
     }
 
     .registration-checkbox__label {
-        padding-left: calc(42 / 768 * 100vw);
+        padding-left: calc(45 / 768 * 100vw);
         font-size: calc(18 / 768 * 100vw);
     }
 
     .registration-checkbox__label::before {
         width: calc(28 / 768 * 100vw);
         height: calc(28 / 768 * 100vw);
-        top: calc(-6 / 768 * 100vw);
         border-radius: calc(7 / 768 * 100vw);
     }
 
     .registration-checkbox__label::after {
-        width: calc(33 / 768 * 100vw);
-        height: calc(33 / 768 * 100vw);
-        left: 1px;
-        top: calc(-10 / 768 * 100vw);
-    }
-
-    .registration__submit {
-        margin-top: calc(372 / 768 * 100vw);
-        margin-left: calc(253 / 768 * 100vw);
-        height: calc(80 / 768 * 100vw);
-        width: calc(220 / 768 * 100vw);
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
     }
 
     .registration-submit__input {
-        padding-top: calc(32 / 768 * 100vw);
-        padding-left: calc(64 / 768 * 100vw);
-        padding-bottom: calc(32 / 768 * 100vw);
-        padding-right: calc(64 / 768 * 100vw);
-        background: #1A226B;
-        border-radius: calc(10 / 768 * 100vw);
+        width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
         font-size: calc(32 / 768 * 100vw);
-        line-height: calc(16 / 768 * 100vw);
-        color: #FFFFFF;
-    }
-} 
-
-@media screen and (min-width: 769px) and (max-width: 1439px) {
-    .registration-checkbox__label::after {
-        top: calc(4 / 1440 * 100vw);
+        border-radius: calc(10 / 768 * 100vw);
     }
 }
 
-@media screen and (min-width: 319px) and (max-width: 320px) {
-    .registration-checkbox__label::before {
-        top: calc(3 / 320 * 100vw);
-    }
-
-    .registration-checkbox__label::after {
-        top: calc(4 / 320 * 100vw);
-    }
-}
