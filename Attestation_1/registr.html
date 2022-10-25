@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__box">
+            <div class="headre__logo">
+                <img class="header-logo__img" src="./img/1280px-IU_logo 1.png" alt="Innopolis">
+                <h1 class="header-Logo__title">PCS Frontend</h1>
+            </div>
+            <div class="header__auth">
+                <a class="header-registration__link" href="registr.html">Регистрация</a>
+                <a class="header-auth__link" href="index.html">Вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="container">
+            <form class="login">
+                <h1 class="login__title">Регистрация</h1>
+                <div class="login__box">
+                    <div class="login__email">
+                        <label class="login-email__label" for="email">Email</label>
+                        <input class="login-email__input" id="email" name="email" type="email" placeholder="Введите email">
+                    </div>
+                    <div class="login__password">
+                        <label class="login-password__label" for="password">Пароль</label>
+                        <input class="login-password__input" id="password" name="password" type="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="login__confirm">
+                        <label class="login-confirm__label" for="password">Подтверждение пароля</label>
+                        <input class="login-confirm__input" id="password" name="password" type="password" placeholder="Подтвердите пароль">
+                    </div>
+                    <div class="login__radio">
+                        <h2 class="login-radio__title">Пол</h2>
+                        <div class="login-radio__box-man">
+                            <input class="login-radio__input-man" id="radio-1" type="radio" name="gender" value="man">
+                            <label class="login-radio__label-man" for="radio-1">Мужчина</label>
+                        </div>
+                        <div class="login-radio__box-woman">
+                            <input class="login-radio__input-woman" id="radio-2" type="radio" name="gender" value="woman">
+                            <label class="login-radio__label-woman" for="radio-2">Женщина</label>
+                        </div>
+                    </div>
+                    <div class="login__text">
+                        <label class="login-text__label" for="textarea">О себе</label>
+                        <textarea class="login-text__textarea" name="textarea" id="textarea" placeholder="Расскажите о себе..."></textarea>
+                    </div>
+                    <div class="login__checkbox">
+                        <input class="login-checkbox__input" id="checkbox-1" type="checkbox">
+                        <label class="login-checkbox__label" for="checkbox-1">Я согласен получать обновления на почту</label>
+                    </div>
+                    <div class="login__submit">
+                        <input class="login-submit__input" type="submit" value="Регистрация">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>    
