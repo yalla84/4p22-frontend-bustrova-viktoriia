@@ -483,7 +483,6 @@ body {
     }
     
     .login-radio__box-man {
-        /*margin-bottom: calc(9 / 768 * 100vw);*/
         height: calc(20 / 768 * 100vw);
  
     }
