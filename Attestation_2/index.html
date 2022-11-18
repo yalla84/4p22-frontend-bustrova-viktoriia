@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__box">
+            <div class="headre__logo">
+                <img class="header-logo__img" src="./img/1280px-IU_logo 1.png" alt="Innopolis">
+                <h1 class="header-Logo__title">PCS Frontend</h1>
+            </div>
+            <div class="header__auth">
+                <a class="header-registration__link" href="registr.html">Регистрация</a>
+                <a class="header-auth__link" href="index.html">Вход</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="container">
+            <form class="login">
+                <h1 class="login__title">Вход</h1>
+                <div class="login__box">
+                    <div class="login__email">
+                        <label class="login-email__label" for="email"><img class=login__star src="img/_.png" alt="star"> Email</label>
+                        <div class="login-email__error">Email введен некорректно</div>
+                        <input class="login-email__input" id="email" name="email" type="email" placeholder="Введите email">
+                    </div>
+                    <div class="login__password">
+                        <label class="login-password__label" for="password"><img class=login__star src="img/_.png" alt="star"> Пароль</label>
+                        <div class="login-password__error">Поле обязательно для заполнения</div>
+                        <input class="login-password__input" id="password" name="password" type="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="login__submit">
+                        <input class="login-submit__input" id='button' type="submit" value="Войти">
+                    </div>
+                </div>        
+            </form>
+        </section>
+    </main>
+    <script src ="script1.js"></script>
+</body>
+</html>    
